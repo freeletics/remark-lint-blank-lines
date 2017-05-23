@@ -1,11 +1,11 @@
 {
-  "name": "remark-lint-blank-lines-1-0-2",
+  "name": "@freeletics/remark-lint-blank-lines",
   "version": "2.0.0",
-  "description": "Checks that all titles are followed by 1 blank line, then no blank lines, then two blank lines before the next title",
-  "author": "Victor Felder <victorfelder@gmail.com>",
+  "description": "Checks that all number of blank lines between elements are respected.",
+  "author": "Remi Barraquand <dev@remibarraquand.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vhf/remark-lint-blank-lines-1-0-2.git"
+    "url": "git+https://github.com/freeletics/remark-lint-blank-lines.git"
   },
   "license": "MIT",
   "dependencies": {
