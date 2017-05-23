@@ -10,6 +10,7 @@ const nok = `* [An Awesome Book](http://example.com/example.html)
 ### Example
 * [Another Awesome Book](http://example.com/book.html)
 
+
 * [Some Other Book](http://example.com/other.html)
 `;
 
@@ -32,8 +33,8 @@ test('remark-lint-alphabetize-lists', (t) => {
   t.deepEqual(
     processor.processSync(nok).messages.map(String),
     [
-      '1:1-1:53: Incorrect number of blank lines between last section and next heading',
-      '3:1-3:12: Incorrect number of blank lines between heading and section'
+      '1:1-1:53: Incorrect number of blank lines between list and next element',
+      '3:1-3:12: Incorrect number of blank lines between heading and next element'
     ],
     'should work on valid fixtures'
   );
