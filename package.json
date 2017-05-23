@@ -31,11 +31,10 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "build-lib": "babel lib -d dist",
-    "build-md": "remark . -qfo",
-    "build": "npm run build-md && npm run build-lib",
-    "test-api": "node test",
-    "test": "npm run lint && npm run build && npm run test-api"
+    "build": "yarn build:md && yarn build:lib",
+    "build:lib": "babel lib -d dist",
+    "build:md": "remark . -qfo",
+    "test": "yarn lint && yarn build && node test"
   },
   "bugs": {
     "url": "https://github.com/vhf/remark-lint-blank-lines-1-0-2/issues"
