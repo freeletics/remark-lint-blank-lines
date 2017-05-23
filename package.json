@@ -1,6 +1,6 @@
 {
   "name": "@freeletics/remark-lint-blank-lines",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Checks that all number of blank lines between elements are respected.",
   "author": "Remi Barraquand <dev@remibarraquand.com>",
   "repository": {
